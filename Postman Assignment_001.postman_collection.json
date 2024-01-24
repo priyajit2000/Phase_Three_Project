@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "8dc2f85a-9f09-4917-8a6b-dd9d1d7d16ab",
+		"name": "Postman Assignment_001",
+		"description": "Pet_id Testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32360728",
+		"_collection_link": "https://interstellar-robot-709344.postman.co/workspace/PHASE-THREE-ASSESSMENT~b800b9b3-d447-44ca-953c-fa8b43086d2b/collection/32360728-8dc2f85a-9f09-4917-8a6b-dd9d1d7d16ab?action=share&source=collection_link&creator=32360728"
+	},
+	"item": [
+		{
+			"name": "Create Pet_Id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 344,\r\n    \"category\": {\r\n        \"id\": 0,\r\n        \"name\": \"string\"\r\n    },\r\n    \"name\": \"Doggie\",\r\n    \"photoUrls\": [\r\n        \"string\"\r\n    ],\r\n    \"tags\": [\r\n        {\r\n            \"id\": 0,\r\n            \"name\": \"string\"\r\n        }\r\n    ],\r\n    \"status\": \"available\"\r\n}\r\n●",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/pet",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"pet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Validate Pet_Id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Pet_Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/pet/20",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"pet",
+						"20"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

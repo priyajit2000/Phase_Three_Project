@@ -1,0 +1,19 @@
+{
+	"info": {
+		"_postman_id": "f73a3fee-f07b-4d90-b07c-2bb096be9fb9",
+		"name": "Postman Assignment_005",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32360728",
+		"_collection_link": "https://interstellar-robot-709344.postman.co/workspace/PHASE-THREE-ASSESSMENT~b800b9b3-d447-44ca-953c-fa8b43086d2b/collection/32360728-f73a3fee-f07b-4d90-b07c-2bb096be9fb9?action=share&source=collection_link&creator=32360728"
+	},
+	"item": [
+		{
+			"name": "User Logout",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

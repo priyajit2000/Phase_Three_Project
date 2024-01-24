@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "a6e429fa-1a03-4825-aa6d-bff6402b3427",
+		"name": "Postman Assignment_002",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32360728",
+		"_collection_link": "https://interstellar-robot-709344.postman.co/workspace/PHASE-THREE-ASSESSMENT~b800b9b3-d447-44ca-953c-fa8b43086d2b/collection/32360728-a6e429fa-1a03-4825-aa6d-bff6402b3427?action=share&source=collection_link&creator=32360728"
+	},
+	"item": [
+		{
+			"name": "20021 Code Check",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Validate id = 20021 in response\r",
+							"pm.test(\"Check if id is 20021\", function () {\r",
+							"    pm.expect(pm.response.json().category.id).to.eql(20021);\r",
+							"});\r",
+							"\r",
+							"// Validate response code is 200\r",
+							"pm.test(\"Check if response code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 9223372016900013000,\r\n  \"category\": {\r\n    \"id\": 20021,\r\n    \"name\": \"string\"\r\n  },\r\n  \"name\": \"doggie\",\r\n  \"photoUrls\": [\"string\"],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"string\",\r\n      \"status\": \"{{statusValue}}\"\r\n    }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/pet",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"pet"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
